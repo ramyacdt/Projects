@@ -1,0 +1,43 @@
+<ion-view title="Menu">
+
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>  
+
+  <ion-content>
+
+    <ion-list>
+      <ion-item ng-repeat="foodCategory in foodCategories" ng-style="bgstyle(item.streak)" href="#/root/food-category/{{foodCategory.id}}">
+      
+        <h2>{{foodCategory.name}}</h2>        
+
+          <div class="photo-box u-1 u-med-1-2 u-lrg-1-3">
+             <img ng-src="{{foodCategory.picture}}"> 
+          </div>
+
+          <div class="photo-box u-1 u-med-1-2 u-lrg-1-3">
+              <img ng-src="{{foodCategory.picture2}}"> 
+          </div>
+
+          <div class="photo-box u-1 u-med-1-2 u-lrg-1-3">            
+              <img ng-src="{{foodCategory.picture3}}"> 
+          </div>     
+        
+      </ion-item>
+    </ion-list>        
+
+  </ion-content>
+
+  <div class="tabs tabs-icon-only">
+    <a nav-clear class="tab-item disable-user-behavior" title="Home" nav-clear ui-sref="root.home">
+      <i class="icon ion-home"></i><span class="tab-title ng-binding" ng-bind-html="title"></span>
+    </a>
+    <a nav-clear class="tab-item disable-user-behavior active" title="Menu" icon-on="ion-ios7-filing" icon-off="ion-ios7-filing-outline" ui-sref="root.menu">
+      <i class="icon ion-fork"></i><span class="tab-title ng-binding" ng-bind-html="title"></span>
+    </a>
+    <a nav-clear class="tab-item disable-user-behavior" title="Contact" icon-on="ion-ios7-filing" icon-off="ion-ios7-filing-outline" ui-sref="root.contact">
+      <i class="icon ion-email"></i><span class="tab-title ng-binding" ng-bind-html="title"></span>
+    </a>
+  </div>
+
+</ion-view>

@@ -1,0 +1,61 @@
+<ion-view title="Home">
+
+	  <ion-nav-buttons side="left">
+	    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+	  </ion-nav-buttons>
+
+    <ion-content>
+
+      <div class="pure-g">
+        <div class="photo-box u-1 u-med-1-3 u-lrg-1-4">
+            <img ng-src="/img/briyani.jpg">       
+        </div>
+
+        <div class="text-box u-1 u-med-2-3 u-lrg-3-4">
+            <div class="l-box">
+                <h1 class="text-box-head">TAJMAHAL</h1>
+                <p class="text-box-subhead">A South Indian Restaurant<br>Bernadottelaan 124,<br>3527GB Utrecht,<br>The Netherlands.<br>Ph: 0292403992<br>Mob: 0031 634818920</p>
+            </div>
+        </div>
+        
+        <div class="photo-box u-1 u-med-1-2 u-lrg-1-3">
+           <img ng-src="/img/2.jpg">
+        </div>
+
+        <div class="photo-box u-1 u-med-1-2 u-lrg-1-3">
+            <img ng-src="/img/3.jpg">
+        </div>
+
+        <div class="photo-box u-1 u-med-1-2 u-lrg-1-3">            
+            <img ng-src="/img/5.jpg">
+        </div>
+
+        <div class="photo-box u-1 u-med-1-2 u-lrg-1-3">
+            <img ng-src="/img/6.jpg">
+        </div>
+
+        <div class="photo-box photo-box-thin u-1 u-lrg-1-3">
+            <img ng-src="/img/7.jpg">
+        </div>
+
+        <div class="photo-box photo-box-thin u-1 u-med-1-3">
+            <img ng-src="/img/4.jpg">
+        </div>
+      
+      </div>         
+      
+    </ion-content>
+
+        <div class="tabs tabs-icon-only">
+          <a nav-clear class="tab-item disable-user-behavior active" title="Home" nav-clear ui-sref="root.home">
+            <i class="icon ion-home"></i><span class="tab-title ng-binding" ng-bind-html="title"></span>
+          </a>
+          <a nav-clear class="tab-item disable-user-behavior" title="Menu" icon-on="ion-ios7-filing" icon-off="ion-ios7-filing-outline" ui-sref="root.menu">
+            <i class="icon ion-fork"></i><span class="tab-title ng-binding" ng-bind-html="title"></span>
+          </a>
+          <a nav-clear class="tab-item disable-user-behavior" title="Contact" icon-on="ion-ios7-filing" icon-off="ion-ios7-filing-outline" ui-sref="root.contact">
+            <i class="icon ion-email"></i><span class="tab-title ng-binding" ng-bind-html="title"></span>
+          </a>
+        </div>
+
+  </ion-view>
